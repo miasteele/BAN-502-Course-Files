@@ -1,0 +1,134 @@
+---
+title: "Project Phase 1 - Exploratory and Descriptive Analysis of Keep it Dry’s Super Soaker"
+author: "Mia Steele"
+date: "2025-02-09"
+output: word_document
+---
+
+
+```{r}
+library(readr)
+test <- read_csv("C:/Users/Owner/Desktop/UNCW/BAN 502/Project Phase 1/test.csv")
+View(test)
+```
+
+```{r}
+hist(test$loading, main = "Distribution of Loading", xlab = "Loading", col = "lightblue")
+
+library(ggplot2)
+ggplot(test, aes(x = attribute_0)) +
+  geom_bar(fill = "skyblue") +
+  labs(title = "Distribution of Attribute 0", x = "Attribute 0", y = "Count") +
+  theme_minimal()
+
+ggplot(test, aes(x = attribute_1)) +
+  geom_bar(fill = "skyblue") +
+  labs(title = "Distribution of Attribute 1", x = "Attribute 1", y = "Count") +
+  theme_minimal()
+
+ggplot(test, aes(x = attribute_2)) +
+  geom_bar(fill = "skyblue") +
+  labs(title = "Distribution of Attribute 2", x = "Attribute 2", y = "Count") +
+  theme_minimal()
+
+ggplot(test, aes(x = attribute_3)) +
+  geom_bar(fill = "skyblue") +
+  labs(title = "Distribution of Attribute 3", x = "Attribute 3", y = "Count") +
+  theme_minimal()
+
+ggplot(test, aes(x = measurement_0)) +
+  geom_histogram(bins = 30, fill = "skyblue", color = "black", alpha = 0.7) +
+  labs(title = "Distribution of Measurement 0", x = "Measurement 0", y = "Frequency") +
+  theme_minimal()
+
+ggplot(test, aes(x = measurement_1)) +
+  geom_histogram(bins = 30, fill = "skyblue", color = "black", alpha = 0.7) +
+  labs(title = "Distribution of Measurement 1", x = "Measurement 1", y = "Frequency") +
+  theme_minimal()
+
+ggplot(test, aes(x = measurement_2)) +
+  geom_histogram(bins = 30, fill = "skyblue", color = "black", alpha = 0.7) +
+  labs(title = "Distribution of Measurement 2", x = "Measurement 2", y = "Frequency") +
+  theme_minimal()
+
+ggplot(test, aes(x = measurement_3)) +
+  geom_histogram(bins = 30, fill = "skyblue", color = "black", alpha = 0.7) +
+  labs(title = "Distribution of Measurement 3", x = "Measurement 3", y = "Frequency") +
+  theme_minimal()
+
+ggplot(test, aes(x = measurement_4)) +
+  geom_histogram(bins = 30, fill = "skyblue", color = "black", alpha = 0.7) +
+  labs(title = "Distribution of Measurement 4", x = "Measurement 4", y = "Frequency") +
+  theme_minimal()
+
+ggplot(test, aes(x = measurement_5)) +
+  geom_histogram(bins = 30, fill = "skyblue", color = "black", alpha = 0.7) +
+  labs(title = "Distribution of Measurement 5", x = "Measurement 5", y = "Frequency") +
+  theme_minimal()
+
+ggplot(test, aes(x = measurement_6)) +
+  geom_histogram(bins = 30, fill = "skyblue", color = "black", alpha = 0.7) +
+  labs(title = "Distribution of Measurement 6", x = "Measurement 6", y = "Frequency") +
+  theme_minimal()
+
+ggplot(test, aes(x = measurement_7)) +
+  geom_histogram(bins = 30, fill = "skyblue", color = "black", alpha = 0.7) +
+  labs(title = "Distribution of Measurement 7", x = "Measurement 7", y = "Frequency") +
+  theme_minimal()
+
+ggplot(test, aes(x = measurement_8)) +
+  geom_histogram(bins = 30, fill = "skyblue", color = "black", alpha = 0.7) +
+  labs(title = "Distribution of Measurement 8", x = "Measurement 8", y = "Frequency") +
+  theme_minimal()
+
+ggplot(test, aes(x = measurement_9)) +
+  geom_histogram(bins = 30, fill = "skyblue", color = "black", alpha = 0.7) +
+  labs(title = "Distribution of Measurement 9", x = "Measurement 9", y = "Frequency") +
+  theme_minimal()
+
+ggplot(test, aes(x = measurement_10)) +
+  geom_histogram(bins = 30, fill = "skyblue", color = "black", alpha = 0.7) +
+  labs(title = "Distribution of Measurement 10", x = "Measurement 10", y = "Frequency") +
+  theme_minimal()
+
+ggplot(test, aes(x = measurement_11)) +
+  geom_histogram(bins = 30, fill = "skyblue", color = "black", alpha = 0.7) +
+  labs(title = "Distribution of Measurement 11", x = "Measurement 11", y = "Frequency") +
+  theme_minimal()
+
+ggplot(test, aes(x = measurement_12)) +
+  geom_histogram(bins = 30, fill = "skyblue", color = "black", alpha = 0.7) +
+  labs(title = "Distribution of Measurement 12", x = "Measurement 12", y = "Frequency") +
+  theme_minimal()
+
+ggplot(test, aes(x = measurement_13)) +
+  geom_histogram(bins = 30, fill = "skyblue", color = "black", alpha = 0.7) +
+  labs(title = "Distribution of Measurement 13", x = "Measurement 13", y = "Frequency") +
+  theme_minimal()
+
+ggplot(test, aes(x = measurement_14)) +
+  geom_histogram(bins = 30, fill = "skyblue", color = "black", alpha = 0.7) +
+  labs(title = "Distribution of Measurement 14", x = "Measurement 14", y = "Frequency") +
+  theme_minimal()
+
+ggplot(test, aes(x = measurement_15)) +
+  geom_histogram(bins = 30, fill = "skyblue", color = "black", alpha = 0.7) +
+  labs(title = "Distribution of Measurement 15", x = "Measurement 15", y = "Frequency") +
+  theme_minimal()
+
+ggplot(test, aes(x = measurement_16)) +
+  geom_histogram(bins = 30, fill = "skyblue", color = "black", alpha = 0.7) +
+  labs(title = "Distribution of Measurement 16", x = "Measurement 16", y = "Frequency") +
+  theme_minimal()
+
+ggplot(test, aes(x = measurement_17)) +
+  geom_histogram(bins = 30, fill = "skyblue", color = "black", alpha = 0.7) +
+  labs(title = "Distribution of Measurement 17", x = "Measurement 17", y = "Frequency") +
+  theme_minimal()
+```
+
+
+```{r}
+summary(test)
+```
+
